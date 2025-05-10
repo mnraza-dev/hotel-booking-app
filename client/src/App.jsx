@@ -2,10 +2,10 @@ import React from "react";
 import Navbar from "./components/Navbar";
 
 const App = () => {
+  const isOwnerPath = useLocation().pathname.include('owner');
   return (
-    <div className="text-3xl underline">
-      <Navbar />
-      Hello world!
+    <div className="">
+      {isOwnerPath &&  <Navbar />}
     </div>
   );
 };
