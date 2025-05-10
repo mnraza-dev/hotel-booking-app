@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
@@ -24,7 +26,7 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <a href="/" className="flex items-center gap-2">
+      <Link to="/" href="/" className="flex items-center gap-2">
         <img
           src={
             "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoWhite.svg"
@@ -32,7 +34,7 @@ const Navbar = () => {
           alt="logo"
           className={`h-9 ${isScrolled && "invert opacity-80"}`}
         />
-      </a>
+      </Link>
 
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-4 lg:gap-8">
