@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="text-3xl underline">
+      <Navbar />
+      Hello world!
+    </div>
+  );
+};
 
-export default App
+export default App;
