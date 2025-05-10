@@ -25,7 +25,6 @@ const Navbar = () => {
           : "py-4 md:py-6"
       }`}
     >
-      {/* Logo */}
       <Link to="/" href="/" className="flex items-center gap-2">
         <img
           src={
